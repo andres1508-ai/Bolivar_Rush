@@ -480,14 +480,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const originalUrls = {
             patineta: './imagenes/scooter}.png',     // Nota: hay un typo en el nombre del archivo
             bicicleta: './imagenes/bicicleta.jpg',
-            motos: './imagenes/moto.png'
+            motos: './imagenes/moto.jpeg'
         };
 
         // URLs de respaldo en caso de error
         const fallbackUrls = {
             patineta: './imagenes/scooter}.png',
             bicicleta: './imagenes/bicicleta.jpg', 
-            motos: './imagenes/moto.png'
+            motos: './imagenes/moto.jpeg'
         };
 
         // Para cada tipo de transporte, intenta cargar su imagen
@@ -1210,7 +1210,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Para transporte, primero muestra las opciones (patineta, bici, motos)
+        // Para transporte, primero muestra las opciones (patineta, bici, motos eléctricas)
         if (category.id === 'transporte' && !appState.selectedTransport) {
             drawTransportOptions(); // Llama a la función que dibuja las opciones de transporte
             ctx.restore();
@@ -1900,7 +1900,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             { 
                 id: 'motos', 
-                name: 'Motos',
+                name: 'Motos Eléctricas',
                 icon: null,
                 description: 'El futuro es eléctrico. Acelera con la confianza de estar 100% cubierto.'
             }
@@ -3520,11 +3520,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 
                 moto: {
-                    esencial: "¡Increíble! 🏍️ Te explico tu **Plan Esencial para Moto**:\n\n**🛡️ Cobertura Básica:**\n• Hurto calificado\n• Daño total por accidente\n• Responsabilidad civil hasta $40M\n• Asistencia básica\n\n**✅ Ejemplos de lo que SÍ cubre:**\n1. Si te roban la moto con todos los seguros\n2. Daños a terceros en un accidente\n\n**❌ Lo que NO cubre:**\n• Conductor sin licencia\n\nPerfecto para empezar con seguridad! 🛡️",
+                    esencial: "¡Increíble! 🏍️ Te explico tu **Plan Esencial para Moto Eléctrica**:\n\n**🛡️ Cobertura Básica:**\n• Hurto calificado\n• Daño total por accidente\n• Responsabilidad civil hasta $40M\n• Asistencia básica\n\n**✅ Ejemplos de lo que SÍ cubre:**\n1. Si te roban la moto eléctrica con todos los seguros\n2. Daños a terceros en un accidente\n\n**❌ Lo que NO cubre:**\n• Conductor sin licencia\n\nPerfecto para empezar con seguridad! 🛡️",
                     
-                    plus: "¡Excelente elección! 🏍️⭐ Tu **Plan Plus para Moto**:\n\n**🛡️ Cobertura Avanzada:**\n• Todo del Plan Esencial\n• Grúa especializada\n• Talleres certificados\n• Reparación de daños parciales\n\n**✅ Ejemplos de lo que SÍ cubre:**\n1. Servicio de grúa si se daña en carretera\n2. Reparación en talleres especializados\n\n**❌ Lo que NO cubre:**\n• Carreras ilegales\n\n¡Protección completa para motociclistas! 🔧",
+                    plus: "¡Excelente elección! 🏍️⭐ Tu **Plan Plus para Moto Eléctrica**:\n\n**🛡️ Cobertura Avanzada:**\n• Todo del Plan Esencial\n• Grúa especializada\n• Talleres certificados\n• Reparación de daños parciales\n\n**✅ Ejemplos de lo que SÍ cubre:**\n1. Servicio de grúa si se daña en carretera\n2. Reparación en talleres especializados\n\n**❌ Lo que NO cubre:**\n• Carreras ilegales\n\n¡Protección completa para motociclistas eléctricos! 🔧",
                     
-                    premium: "¡La máxima protección! 🏍️💎 Tu **Plan Premium para Moto**:\n\n**🛡️ Cobertura Total:**\n• Todo de los planes anteriores\n• Moto de cortesía\n• Seguro de batería (eléctricas)\n• Conductor elegido\n• Asistencia 24/7 premium\n\n**✅ Ejemplos de lo que SÍ cubre:**\n1. Moto de reemplazo mientras reparamos\n2. Protección especial para motos eléctricas\n\n**❌ Lo que NO cubre:**\n• Uso comercial no declarado\n\n¡La protección más avanzada del mercado! 🚀"
+                    premium: "¡La máxima protección! 🏍️💎 Tu **Plan Premium para Moto Eléctrica**:\n\n**🛡️ Cobertura Total:**\n• Todo de los planes anteriores\n• Moto de cortesía\n• Seguro de batería especializado\n• Conductor elegido\n• Asistencia 24/7 premium\n\n**✅ Ejemplos de lo que SÍ cubre:**\n1. Moto eléctrica de reemplazo mientras reparamos\n2. Protección especial para batería y motor eléctrico\n\n**❌ Lo que NO cubre:**\n• Uso comercial no declarado\n\n¡La protección más avanzada para motos eléctricas! 🚀"
                 }
             },
             
@@ -3643,9 +3643,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 premium: "¡Increíble! Tienes el Plan Premium para bicicleta 🚴‍♂️🏆. La protección más completa para tu bici. ¿Te gustaría revisar todos tus beneficios o consultar algo específico?"
             },
             motos: {
-                esencial: "Veo que tienes el Plan Esencial para moto 🏍️. ¡Muy bien! Estás protegido contra hurto y daños básicos. ¿Quieres que revisemos la cobertura juntos?",
-                plus: "¡Perfecto! Tienes el Plan Plus para moto 🏍️🌟. Con cobertura ampliada y servicios adicionales. ¿Hay algo sobre tu plan que te gustaría aclarar?",
-                premium: "¡Fantástico! Tienes el Plan Premium para moto 🏍️💫. La máxima protección disponible. ¿Te interesa conocer todos los detalles de tu cobertura?"
+                esencial: "Veo que tienes el Plan Esencial para moto eléctrica 🏍️⚡. ¡Muy bien! Estás protegido contra hurto y daños básicos. ¿Quieres que revisemos la cobertura juntos?",
+                plus: "¡Perfecto! Tienes el Plan Plus para moto eléctrica 🏍️🌟. Con cobertura ampliada y servicios adicionales. ¿Hay algo sobre tu plan que te gustaría aclarar?",
+                premium: "¡Fantástico! Tienes el Plan Premium para moto eléctrica 🏍️💫. La máxima protección disponible. ¿Te interesa conocer todos los detalles de tu cobertura?"
             },
             celular: {
                 esencial: "Veo que protegiste tu celular con el Plan Esencial 📱. ¡Inteligente! Estás cubierto contra los daños más frecuentes. ¿Tienes alguna pregunta sobre la cobertura?",
@@ -3772,7 +3772,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     beneficios_especiales: "Servicio de grúa, asistencia técnica 24/7, descuentos en repuestos"
                 },
                 motos: {
-                    descripcion: "Seguros para motocicletas de todas las cilindradas",
+                    descripcion: "Seguros para motos eléctricas de todas las cilindradas",
                     planes: ["Esencial ($120.000/mes)", "Plus ($180.000/mes)", "Premium ($250.000/mes)"],
                     coberturas: "Hurto, daño total/parcial, daños a terceros hasta $50M, asistencia vial",
                     beneficios_especiales: "Grúa especializada, asistencia mecánica, descuentos en repuestos"
